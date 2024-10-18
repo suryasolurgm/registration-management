@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Registration Management</h1>
+<form id="registrationForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="dateOfBirth">Date of Birth:</label>
+  <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+  <button type="submit">Register</button>
+</form>
+
+<h2>All Registrations</h2>
+<table id="registrationsTable">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Date of Birth</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<div id="response"></div>
+<script src="scripts.js"></script>
+</body>
+</html>
